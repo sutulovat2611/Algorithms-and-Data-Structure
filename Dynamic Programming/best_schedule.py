@@ -3,7 +3,6 @@ __author__ = "Tatiana Sutulova"
 date: 15/4/2021
 """
 
-#%% Task 1 
 def best_schedule(weekly_income, competitions):
     """ 
     Input: 
