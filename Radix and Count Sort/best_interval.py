@@ -152,3 +152,9 @@ def count_digit_int(n):
         n //= 10
         count += 1
     return count
+
+
+#test
+t = 5
+transactions = [11, 1, 3, 1, 4, 10, 5, 7, 10]
+print(best_interval(transactions, t))
