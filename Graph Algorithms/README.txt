@@ -35,3 +35,47 @@
     - O(TM), where 
     - T is the total number of trades available
     - M is max_trades
+    
+2. optional_delivery.py:
+ General idea: 
+    Software that allows to travel from on city to another, while traveling is costly. We want to get
+    to our destination as cheaply as possible. However, there is a way we can make some money on
+    our way. We can pick up an item from one particular city, and deliver it to another particular
+    city. We want to determine whether it will be cheaper to perform this delivery during our
+    journey, or just go directly to our destination.
+    A function opt_delivery(n, roads, start, end, delivery) is designed in order to find the cost of travelling and the cities we
+    have to travel to in order to get the most money
+ 2.1 Input
+      - n: is the number of cities ([0..n-1])
+        - roads: is a list of tuples (u,v,w):
+           - Each tuple represents an road between cities u and v.
+           - w: is the cost of traveling along that road, which is always non-negative. ( both ways)
+        - start: the city to start with
+        - end: the city to end with
+        - delivery: is a tuple (pickup_city, delivery_city, money):
+            - pickup_city:  the city where we can pick up the item
+            - delivery_city: city where we can deliver the item
+            - money: the amount of money we can make if we deliver the item from the pickup_city to the delivery_city.
+ 2.2 Output
+    - tuple, that consists of :
+         - the maximum possible profit travelling from current_city to end_city
+         - list of all the cities travelled before reaching the end_city with the maximum profit
+ 2.3 Example
+    n = 4
+    roads = [(0,1,3),(0,2,5),(2,3,7),(1,3,20)]
+    start = 0
+    end = 1
+    delivery = (2,3,25)
+    profit = 25
+    opt_delivery(n, roads, start, end, delivery)
+    >>> (2, [0,2,3,2,0,1])
+    delivery = (2,3,20)
+    opt_delivery(n, roads, start, end, delivery)
+    >>> (3, [0,1])
+    delivery = (2,3,100)
+    opt_delivery(n, roads, start, end, delivery)
+    >>>(-73, [0,2,3,2,0,1])
+2.4 Complexity
+    Time complexity: O(Rlog(N)) where
+        - R is the total number of roads
+        - N is the total number of cities
