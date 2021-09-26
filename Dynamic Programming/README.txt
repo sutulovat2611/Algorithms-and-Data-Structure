@@ -44,7 +44,7 @@
     the ends of the coast, which only have 1.
     function best_itinerary(profit, quarantine_time, home) function is based on dynamic programming approach and it allows
     to find the maximum money that may be earned by a salesperson.
- 1.1 Input
+ 2.1 Input
      - profit is a list of lists. All interior lists are length n. Each interior list represents a different
        day. profit[d][c] is the profit that the salesperson will make by working in city c on day d.
      - quarantime_time is a list of non-negative integers. quarantime_time[i] is the number of
@@ -52,9 +52,9 @@
      - home is an integer between 0 and n-1 inclusive, which represents the city that the salesperson
        starts in. They can start working in this city without needing to quarantine on the first day.
        If they leave and come back later, they will need to quarantine.
- 1.2 Output
+ 2.2 Output
     - best_itinerary returns an integer, which is the maximum amount of money that can be earned by the salesperson.
- 1.3 Example
+ 2.3 Example
     profit = [
     [6, 9, 7, 5, 9]
     [4, 7, 3, 10, 9]
@@ -69,7 +69,7 @@
     >>> 39
     best_itinerary(profit, quarantine, 1)
     >>> 54
-1.4 Complexity
+2.4 Complexity
     - Time: O(nd)
     - Space: O(nd)
     - where n is the number of cities, and d is the number of days
