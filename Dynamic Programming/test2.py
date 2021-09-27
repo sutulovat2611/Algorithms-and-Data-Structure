@@ -1,7 +1,8 @@
 
 
 from random import randint, seed
-from assignment2 import best_schedule, best_itinerary
+from best_itinerary import best_itinerary
+from best_schedule import best_schedule 
 from time import time
 
 
