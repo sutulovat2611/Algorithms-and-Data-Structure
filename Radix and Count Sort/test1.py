@@ -1,5 +1,6 @@
 import unittest
-from assignment1 import *
+from best_interval import *
+from words_with_anagrams import *
 import random
 class TestRadix(unittest.TestCase):
 
