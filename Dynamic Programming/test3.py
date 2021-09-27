@@ -1,5 +1,6 @@
 import unittest
-from assignment2 import best_itinerary
+from best_itinerary import best_itinerary
+from best_schedule import best_schedule 
 
 class TestRandomTask2(unittest.TestCase):
     def testCase0(self):
