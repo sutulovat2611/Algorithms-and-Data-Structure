@@ -1,5 +1,6 @@
 import unittest
-from assignment2 import best_schedule , best_itinerary
+from best_itinerary import best_itinerary
+from best_schedule import best_schedule 
 import random
 import time
 
