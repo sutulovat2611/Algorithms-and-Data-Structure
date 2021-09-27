@@ -1,4 +1,5 @@
-from assignment3 import *
+from DNA_fragments import *
+from orf_finder import *
 import unittest
 import random as rd
 import statistics as st
