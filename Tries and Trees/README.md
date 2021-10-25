@@ -63,3 +63,6 @@ as a prefix and end as a suffix
 ### Time Complexity
 - _init_ method of _OrfFinder_ runs in O(N^2) time, where N is the length of genome.
 - _find_ runs in (len(start) + len(end) + U) time, where U is the number of characters in the output list.
+
+# Testing
+Both files may be tested with __test.py__
