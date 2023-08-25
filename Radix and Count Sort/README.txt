@@ -1,4 +1,4 @@
-1. best_schedule.py:
+. best_schedule.py:
  General idea: 
    Consider a large dataset of transaction records. Given a number t, we wish to determine which
    interval of length t contains the most transactions. All times in this question are measured in
